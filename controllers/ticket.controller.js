@@ -1,7 +1,6 @@
 const Ticket = require("../models/ticket.model.js");
 const Note = require("../models/note.model.js");
 
-/
 const createTicket = async (req, res) => {
   try {
     const { customerName, customerEmail, subject, description } = req.body;
