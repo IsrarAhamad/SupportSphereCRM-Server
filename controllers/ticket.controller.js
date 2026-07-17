@@ -1,9 +1,7 @@
-const Ticket = require("../models/ticket.model");
-const Note = require("../models/note.model");
+const Ticket = require("../models/ticket.model.js");
+const Note = require("../models/note.model.js");
 
-// =========================
-// Create Ticket
-// =========================
+/
 const createTicket = async (req, res) => {
   try {
     const { customerName, customerEmail, subject, description } = req.body;
@@ -38,9 +36,7 @@ const createTicket = async (req, res) => {
   }
 };
 
-// =========================
-// Get All Tickets + Search + Filter
-// =========================
+
 const getAllTickets = async (req, res) => {
   try {
     const { search, status } = req.query;

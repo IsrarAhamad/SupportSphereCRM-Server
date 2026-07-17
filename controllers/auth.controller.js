@@ -1,4 +1,4 @@
-const User = require("../models/user.model");
+const User = require("../models/user.model.js");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
@@ -9,9 +9,7 @@ const generateToken = (id) => {
   });
 };
 
-// =========================
-// Register User
-// =========================
+
 const registerUser = async (req, res) => {
   try {
     const { name, email, password } = req.body;
@@ -61,9 +59,7 @@ const registerUser = async (req, res) => {
   }
 };
 
-// =========================
-// Login User
-// =========================
+
 const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;

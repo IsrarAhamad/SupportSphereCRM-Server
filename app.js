@@ -1,10 +1,10 @@
 const express = require("express");
 const cors = require("cors");
 
-const testRoutes = require("./routes/test.route");
-const authRoutes = require("./routes/auth.route");
-const userRoutes = require("./routes/user.route");
-const ticketRoutes = require("./routes/ticket.route");
+const testRoutes = require("./routes/test.route.js");
+const authRoutes = require("./routes/auth.route.js");
+const userRoutes = require("./routes/user.route.js");
+const ticketRoutes = require("./routes/ticket.route.js");
 
 const app = express();
 
